@@ -1,0 +1,5 @@
+*.o
+debug/
+*.d
+hw/target/debug
+
