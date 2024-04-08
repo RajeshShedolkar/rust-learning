@@ -1,23 +1,18 @@
 fn main() {
     println!("Hello, world!");
     let a = 2;
-    another_function(a);
-    println!("post function. {}", a);
+    fun1(a);
+    println!("post function fun1: {}", a);
+    fun2(a);
+    println!("post function fun2. {}", a);
 }
 
-fn another_function(a: i32) {
+fn fun1(a: i32) {
     println!("Another function.");
     println!("param. {}", a);
 }
 
-// fn main() {
-//     println!("Hello, world!");
-//     let a = 2;
-//     another_function(&a);
-//     println!("post function. {}", a);
-// }
-
-// fn another_function(a: &i32) {
-//     println!("Another function.");
-//     println!("param. {}", a);
-// }
+fn fun2(a: &i32) {
+    println!("Another function.");
+    println!("param. {}", a);
+}
