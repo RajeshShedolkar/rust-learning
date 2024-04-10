@@ -2,4 +2,5 @@
 debug/
 *.d
 hw/target/debug
+hw/target
 
