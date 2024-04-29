@@ -3,3 +3,26 @@ debug/
 *.d
 hw/target/debug
 
+# Generated files
+/target/
+
+# Dependency directory
+Cargo.lock
+Cargo.toml.orig
+
+# Rust binary
+*.rs.bk
+
+# VS Code specific files
+.vscode/
+
+# macOS specific files
+.DS_Store
+
+# Ignore compiled binaries
+*.o
+*.rlib
+*.d
+*.exe
+
+
