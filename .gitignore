@@ -2,6 +2,7 @@
 debug/
 *.d
 hw/target/debug
+hw/target
 
 # Generated files
 /target/
