@@ -36,13 +36,18 @@ fn main() {
 
 
     let num = String::from("Rajesh Shedolkar");
-    onwner_ship(num);
+    // onwner_ship(num);
+    onwner_ship_with_ref(&num);
     print!("num after function call: {}", num);
     print!("\n");
 }
 
 
 fn onwner_ship(num: String){
+    print!( "num in ownership function: {}", num);
+}
+
+fn onwner_ship_with_ref(num: &String){
     print!( "num in ownership function: {}", num);
 }
 
