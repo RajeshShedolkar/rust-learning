@@ -39,6 +39,12 @@ fn main() {
     // onwner_ship(num);
     onwner_ship_with_ref(&num);
     print!("num after function call: {}", num);
+
+    let mut s = String::from("Mutable string ");
+    print!("Before string: {}", s);
+    mut_ref_fn(&mut s);
+    print!("Before string: {}", s);
+
     print!("\n");
 }
 
@@ -68,4 +74,8 @@ fn first_word(str: String) -> String{
     }
 
     return ans;
+}
+
+fn mut_ref_fn(s1: &mut String){
+    s1.push_str("additional text");
 }
