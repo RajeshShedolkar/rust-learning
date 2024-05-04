@@ -41,9 +41,12 @@ fn main() {
     print!("num after function call: {}", num);
 
     let mut s = String::from("Mutable string ");
-    print!("Before string: {}", s);
+    print!("s address: {:p}", s.as_ptr());
+    // print!("Before string: {}", s);
     mut_ref_fn(&mut s);
-    print!("Before string: {}", s);
+    // print!("Before string: {}", s);
+    let s1 = &mut s;
+    print!("s1 address: {:p}, {:p}", s1.as_ptr(), &s1);
 
     print!("\n");
 }
