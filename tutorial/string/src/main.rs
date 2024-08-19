@@ -52,7 +52,7 @@ fn main() {
 }
 
 
-fn onwner_ship(num: String){
+fn onwner_ship(num: String) {
     print!( "num in ownership function: {}", num);
 }
 
@@ -62,12 +62,30 @@ fn onwner_ship_with_ref(num: &String){
 
 
 
+fn word_fun(str: String) -> String {
+    let mut ans = String::from("");
+    for c in str.chars() {
+        print!("\n{}", c);
+        ans.push(c);
+        if c == ' ' {
+            break;
+        }
+    }
+
+    for (i, c) in str.chars().enumerate(){
+        print!("({}, {}), ", i, c);
+    }
+
+    return ans;
+}
+
+
 fn first_word(str: String) -> String{
     let mut ans = String::from("");
     for c in str.chars() {
         print!("\n{}", c);
         ans.push(c);
-        if c == ' '{
+        if c == ' ' {
             break;
         }
     }
