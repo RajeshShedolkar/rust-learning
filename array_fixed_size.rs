@@ -4,8 +4,6 @@ fn main() {
 
     // Access elements of the array
     println!("First element: {}", arr[0]);
-
-    // Iterate through the array
     for element in arr.iter() {
         println!("Element: {}", element);
     }
